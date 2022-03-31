@@ -49,6 +49,18 @@
       "method": "Ispeci je",
       "cookingTime": "35 minutes",
       "id": "Y9yoeLc"
+    },
+    {
+      "title": "Pura",
+      "ingredients": [
+        "Kukuruzno brasno",
+        "voda",
+        "sol",
+        "jogurt"
+      ],
+      "method": "Skuhati",
+      "cookingTime": "15 minutes",
+      "id": "d9ip06z"
     }
   ]
 }
