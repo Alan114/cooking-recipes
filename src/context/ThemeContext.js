@@ -6,7 +6,7 @@ export const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
   return (
-    <ThemeContext.Provider value={{ color: "blue" }}>
+    <ThemeContext.Provider value={{ color: "royalblue" }}>
       {children}
     </ThemeContext.Provider>
   );
