@@ -30,6 +30,12 @@ const Recipe = () => {
       });
   }, [id]);
 
+  const handleClick = () => {
+    projectFirestore.collection("recipes").doc(id).update({
+      title: "Something different",
+    });
+  };
+
   return (
     <div className={`recipe ${mode}`}>
       {error && <p className="error">{error}</p>}
@@ -44,6 +50,7 @@ const Recipe = () => {
             ))}
           </ul>
           <p className="method">{recipe.method}</p>
+          <button onClick={handleClick}>Update me</button>
         </>
       )}
     </div>
