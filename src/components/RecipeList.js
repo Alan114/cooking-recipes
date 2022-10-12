@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useTheme } from "../hooks/useTheme";
 import "./RecipeList.css";
+import Angularisbetter from "./Angularisbetter";
 
 const RecipeList = ({ recipes }) => {
   const { mode } = useTheme();
@@ -20,6 +21,7 @@ const RecipeList = ({ recipes }) => {
           <Link to={`/recipes/${recipe.id}`}>Cook this</Link>
         </div>
       ))}
+      <Angularisbetter />
     </div>
   );
 };

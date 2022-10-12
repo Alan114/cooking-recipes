@@ -1,0 +1,34 @@
+#angular {
+  position: relative;
+  background-color: royalblue;
+  display: grid;
+  place-items: center;
+  transition: 0.5s ease;
+}
+.angular {
+  color: white !important;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: 0.5s ease;
+}
+#angular:hover {
+  transform: rotate(5deg);
+}
+#angular:hover .angular {
+  transform: rotate(-20deg);
+}
+.ball {
+  top: 0;
+  position: absolute;
+  background-color: red;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  transition: 1s ease-in;
+  z-index: -1;
+}
+#angular:hover .ball {
+  /* transform: translateY(220px); */
+  top: 300px;
+}
